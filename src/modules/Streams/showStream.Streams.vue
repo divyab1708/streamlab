@@ -1,6 +1,7 @@
 <template>
   <div id="streamContainer">
     <div class="streamContainer">
+        <!-- Stream window -->
         <div class="streamMain " :class="streamLayout">
 
             <!-- displays screenshare -->
@@ -12,6 +13,11 @@
             
 
         </div>
+        <!-- End Stream window -->
+
+
+        <!-- various Layout configurations.-->
+        <!--  A v-for loop could had been added here by creating an array of objects containing actions, classes for icons  -->
         <div class="layoutOptions" >
             <div class="onlyVideoFeed" v-if="videoFeed.showOnStream && !screenShare.showOnStream ">
                 <button class="btn btn-default " :class="{'active': streamLayout == 'videoFeed100'}" @click="streamLayout='videoFeed100'"><div class="vf100Icon layoutIcon"></div></button>
@@ -24,6 +30,7 @@
                 <button class="btn btn-default" :class="{'active': streamLayout == 'videoFeedSplit'}" @click="streamLayout='videoFeedSplit'"><div class="vfssSplitIcon layoutIcon"></div></button>
             </div>
         </div>
+        <!-- End various Layout configurations -->
     </div>
 
   </div>
@@ -204,7 +211,7 @@ export default {
         &.streamMain{
             display: flex;
             justify-content:center;
-    align-items:center;
+            align-items:center;
         }
         .videoFeedContainer{
             height: 80%;

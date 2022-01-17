@@ -7,6 +7,7 @@
           <add-source :videoFeed="videoFeed" :screenShare="screenShare" />
         </div>
         <!-- End LHS -->
+
         <!-- RHS of the screen ie STREAM -->
         <div class="col-lg-10 col-md-12 background">
           <show-stream :videoFeed="videoFeed" :screenShare="screenShare" />
@@ -17,6 +18,7 @@
       </div>
 
     </div>
+    <!-- Static footer buttons -->
     <div class="footerButtons text-center">
       <div>
         <button class="btn btn-default"><i class="fas fa-comment"></i>Chat</button>
@@ -24,6 +26,8 @@
         <button class="btn btn-primary"><i class="fas fa-rocket"></i>Go Live</button>
       </div>
     </div>
+    <!-- End Static footer buttons -->
+
 
    
 
