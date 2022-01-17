@@ -1,0 +1,54 @@
+@import '@/assets/scss/colors.scss';
+
+@font-face {
+    font-family: "Roboto";
+    src: url(/fonts/Roboto/Roboto-Regular.ttf) format("ttf");
+    font-weight: regular;
+  }
+// Common components
+.btn{
+    border-radius: 4px;
+    padding: 4px;
+    margin-right: 4px;
+    padding: 4px 36px;
+    // font-size: 12px;
+    min-width: 150px;
+    i{
+      margin-right: 4px;
+    }
+    &.btn-sm{
+        padding: 4px ;
+        min-width: auto;
+      }
+  }
+  
+  .btn-primary{
+    background: $primary;
+    border-color: $primary;
+    &:hover, &:active, &:focus{
+      background: $primary-dark;
+    }
+  }
+  .btn-default{
+    background: $gray1;
+
+    &:hover{
+      background: $dark-gray1;
+    }
+  }
+.modal-backdrop{
+  // background: white;
+  &.show{
+    opacity: 70%;
+  }
+  
+}
+
+
+.modal-content{
+    
+    border: 0;
+    .modal-header, .modal-footer{
+      border: 0;
+    }
+}
