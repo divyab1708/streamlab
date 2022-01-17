@@ -86,6 +86,7 @@ export default {
 <style lang="scss">
 @import '@/assets/scss/colors.scss';
 
+// Layout configuration icons
 .layoutIcon{
     width: 50px;
     height: 30px;
@@ -116,13 +117,9 @@ export default {
     }
 }
 
+// End - Layout configuration icons
 
-// .fa,.fas,.far,.fal,.fab {
-//   font-family: "Font Awesome 5 Free";
-// }
-  #streamContainer{
-      
-  }
+
   .streamContainer {
     // margin: auto;
 
@@ -161,6 +158,8 @@ export default {
             }
         }
     }
+
+    // Layout configuration styles
     .screenShare{
         width: 100%;
     }
