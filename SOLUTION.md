@@ -1,5 +1,5 @@
 ## How long did it take you to complete this assignment?
-It took me about 1.5 day to finish this assignment. I can take less time to develop it once I get used to using Vue again (Developed a front-end after 1.5 year).
+It took me about 1.5 day to finish this assignment. Will be faster once I get used to using Vue again (Developed a front-end after 1.5 year).
 
 ## What about this assignment did you find most challenging?
 Making the Split Stream responsive was challenging a bit.
@@ -14,15 +14,20 @@ Did not find anything unexpected.
 Yes, it was. This assignment made me use most of the features of VueJS and CSS.
 
 ## Briefly explain your decisions to use tools, frameworks and libraries like React, Vue, etc.
-Vue JS - makes it easy to make the application interactive.
-Bootstrap - It has the grid system, which makes it easy to create different layouts and making it responsive. Also it has other pre-defined components - Modal, buttons.
-Fontawesome - pre-defined classes for icons
+- Vue JS - makes it easy to make the application interactive.
+- Bootstrap - It has the grid system, which makes it easy to create different layouts and making it responsive. Also it has other pre-defined components - Modal, buttons.
+- Fontawesome - pre-defined classes for icons
 
 ## Did you make certain assumptions and decisions around the UI/UX? Please elaborate on your reasonings.
 
-- The icons for layout configurations might not look great since I took a screenshot and used them.
 
 - As mentioned before, after selecting an option for a source in the modal, since there is no intermediate step mentioned, I am programmaticaly adding a source on the left hand side list.
+
+- For the split screen (video feed and screenshare ) based on the wireframe (also by thinking by myself), the screenshare is never cropped since I assumed that it is more important to see the entire screen at all the time. For the video feed, the aspect ratio of the feed is maitained but only the window size of the feed ie 33%  of the stream size, and centered is shown ( the streamer will have to make sure that they are the centre of the video feed to be visible).
+
+- On the left-hand side bar (list of sources), according to the wireframe the buttons are always visible on the thumbnail. It reduces the visibility of the thumbnail. The user might have difficulty recognizing which one it is. Therefore, I am showing the buttons only when you hover on it. And the selected ones are highlighted by giving them a border. Another Idea I had was to show an icon on top left of thumbnail as a camera (depicting video feed) and screen (depicting screenshare).
+
+- The icons for layout configurations might not look great since I took a screenshot and used them.
 
 - Even if you select the same source on "add a new source" modal again and again, I am currently not performing validation for it since I am adding the sources programmatically.
 
@@ -33,8 +38,6 @@ Fontawesome - pre-defined classes for icons
 - Assumed that images I will be getting will always be of the aspect ratio 16:9
 
 - Added some styling to the buttons for hover.
-
-- For the split screen (video feed and screenshare ) based on the wireframe (also by thinking by myself), the screenshare is never cropped since I assumed that it is more important to see the entire screen at all the time. For the video feed, the aspect ratio of the feed is maitained but only the window size of the feed ie 33%  of the stream size, and centered is shown ( the streamer will have to make sure that they are the centre of the video feed to be visible).
 
 - The image size for camera.png is small, so it appears pixelated when shown on the stream.
 
